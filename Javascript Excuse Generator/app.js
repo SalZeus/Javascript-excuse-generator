@@ -15,7 +15,10 @@ const arrayConcatenator = ({who, action, what, when}) => `${who} ${action} ${wha
 
 const writeToHtml = () => {
     const value = {
-        who:arrayPicker(who), action:arrayPicker(action), what:arrayPicker(what), when:arrayPicker(when), 
+        who:arrayPicker(who), 
+        action:arrayPicker(action), 
+        what:arrayPicker(what), 
+        when:arrayPicker(when), 
       }
     return document.getElementById("excuse").innerHTML = arrayConcatenator(value);
 };
